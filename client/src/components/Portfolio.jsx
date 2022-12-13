@@ -4,8 +4,8 @@ import bookrecord from '../assets/projects/bookrecord.png'
 import bookmyshow from '../assets/projects/bookmyshow.png'
 import Vfolio from '../assets/projects/Vfolio.png'
 
-const Projects = () => {
-    const projects = [
+const Portfolio = () => {
+    const portfolio = [
         {
             id:1,
             child:(
@@ -40,23 +40,23 @@ const Projects = () => {
         }
     ]
   return (
-    <div name='project' className='bg-black w-full  md:h-screen'>
+    <div name='portfolio' className='bg-black w-full  md:h-screen'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-white bg-gradient-to-r from-amber-900 via-yellow-400 to-amber-200
-                bg-clip-text text-transparent'>Projects</p>
+                bg-clip-text text-transparent'>Portfolio</p>
                 <p className='py-6 text-gray-400'>Check out some of my works right here!</p>
             </div>
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
             {
-                projects.map(({id,src,child,href}) =>(
+                portfolio.map(({id,src,child,href}) =>(
                     <div 
                     key={id}
                     className='shadow-md shadow-gray-200 rounded-md bg-black duration-200 hover:scale-105 h-full'>
                     <img src={src} alt="" 
                     className='rounded-t-md w-full'/>
-                    <a href={href} className='text-gray-400 text-center font-bold'>{child}</a>
+                    <p><a href={href} className='text-gray-400 text-center font-bold'>{child}</a></p>
                 </div>
                 ))
             }
@@ -66,4 +66,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Portfolio

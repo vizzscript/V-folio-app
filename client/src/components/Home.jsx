@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroImage from '../assets/HeroImage.jpg'
 import {SlArrowRight} from 'react-icons/sl'
+import { Link } from 'react-scroll'
 const Home = () => {
   return (
     <div name="home" 
@@ -20,13 +21,17 @@ const Home = () => {
                 I enjoy developing websites with technologies like React, Tailwind, Node.js, and MongoDB.
                 </p>
                 <div>
-                    <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md 
+                    <Link
+                    to="portfolio"
+                    smooth
+                    duration="500"
+                    className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md 
                     bg-gradient-to-r from-cyan-500 to-blue-900 cursor-pointer'>
                         Portfolio
                         <span className='group-hover:rotate-90 duration-300'>
                             <SlArrowRight size={20} className='ml-1'/>
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div>
