@@ -13,11 +13,11 @@ const Contact = () => {
             <div className='flex justify-center items-center rounded-lg w-3/4 py-8'>
                 <form action='https://getform.io/f/f09f226b-97ce-4adb-b3b9-c5f40d75860c' method = 'POST' className='flex flex-col w-full md:w-1/2'>
                     <input type="text" name='name' placeholder='Enter your name' className='p-2 bg-transparent border-2
-                    rounded-md text-white focus:outline-none'/>
+                    rounded-md text-white focus:outline-none' required/>
                     <input type="email" name='name' placeholder='Enter your email' className='p-2 my-4 bg-transparent border-2
-                    rounded-md text-white focus:outline-none'/>
+                    rounded-md text-white focus:outline-none' required/>
                     <textarea type="message" row='10' placeholder='Enter your message' className='p-2 bg-transparent border-2
-                    rounded-md text-white focus:outline-none'></textarea>
+                    rounded-md text-white focus:outline-none' required></textarea>
                     <button className='text-white bg-gradient-to-b from-cyan-500 to-blue-900 px-6
                     py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'>Let's talk</button>
                 </form>
